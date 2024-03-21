@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Custom styles */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    main {
+      flex-grow: 1;
+    }
+    nav {
+      background-color: #8EC5FC;
+      background-image: linear-gradient(to right, #d6acfe, #d6acfe, #abd4fe);
+    }
+    footer {
+      background-color: #8EC5FC;
+      background-image: linear-gradient(to right, #d6acfe, #d6acfe, #abd4fe); 
+      margin-top: auto;
+    }
+    main a {
+      margin-right: 10px; 
+    }
+  </style>
+</head>
+<body>
+  <nav class="py-6 px-8 bg-gradient-to-r from-purple-600 to-blue-500 text-center text-white">
+    <p class="text-3xl font-bold">Projectflow</p>
+  </nav>
+  <main class="py-6 px-8">
+
+      <h1 class="mb-6 text-3xl font-semibold text-gray-800">Task Title</h1>
+      <a href="#" class="py-4 px-8 bg-emerald-500 text-white rounded-lg shadow-md hover:bg-emerald-700 transition duration-300">Mark as done</a>
+      <a href="#" class="py-4 px-8 bg-violet-500 text-white rounded-lg shadow-md hover:bg-violet-700 transition duration-300">Edit</a>
+      <a href="#" class="py-4 px-8 bg-amber-600 text-white rounded-lg shadow-md hover:bg-amber-1000 transition duration-800">Delete</a>
+     
+     
+     
+      <p class="mt-10">
+           This is the description for the task.
+        This is the description for the task.
+        This is the description for the task.
+        This is the description for the task.
+      </p>
+   
+   
+  </main>
+  <footer class="py-6 px-8 bg-gradient-to-r from-purple-600 to-blue-500 text-center text-white">
+    <p class="text-sm">Copyright(c) - yesh@24</p>
+  </footer>
+</body>
+</html>

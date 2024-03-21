@@ -1,0 +1,67 @@
+{% extends 'projectflow/afterlogin.html' %}
+
+{% block content %}
+<style>
+    /* Additional styling */
+    .container {
+      max-width: 400px;
+      margin: auto;
+      padding: 2rem;
+      background-color: transparent; /* Set background to transparent */
+      border-radius: 0.5rem;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+    .form-input {
+      border: 2px solid #966be4;
+      border-radius: 0.375rem;
+      background-color: rgb(233, 230, 230);
+      color: #111317;
+      padding: 0.75rem;
+      transition: border-color 0.3s;
+      width: 100%;
+      box-sizing: border-box; 
+      margin-bottom: 1rem; 
+    }
+    .form-input:focus {
+      border-color: #7F00FF;
+    }
+    .submit-button {
+      background-color: #7F00FF;
+      color: #FFFFFF;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 6px;
+      width: 100%;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    .submit-button:hover {
+      background-color: #6A0DAD;
+    }
+    nav a {
+      color: white;
+      margin: 0 0.5rem;
+      transition: text-decoration 0.3s;
+    }
+    nav a:hover {
+      color: black;
+    }
+  </style>
+    
+    <div class="container">
+        <h1 class="mb-4 text-3xl text-center text-black-800">Add Todolist</h1>
+        <form class="space-y-4" method="post" action=".">
+            {% csrf_token %}
+            <div>
+                <label class="block text-slate-800 mb-1" for="name">Name</label>
+                <input name="name" type="text" id="name" class="form-input">
+            </div>
+            <div>
+                <label class="block text-slate-800 mb-1" for="description" >Description</label>
+                <textarea name="description" id="description" class="form-input" rows="4"></textarea>
+            </div>
+          
+          <button type="submit" class="submit-button">Submit</button>
+        </form>
+    </div>
+{% endblock %}

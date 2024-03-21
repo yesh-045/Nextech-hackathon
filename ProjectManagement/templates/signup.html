@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Custom styles */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #8EC5FC; /* Background color */
+      background-image: linear-gradient(to right, #d6acfe, #d6acfe, #abd4fe);
+      margin: 0;
+      padding: 0;
+      min-height: 100vh; /* Ensures the body extends to at least the height of the viewport */
+      display: flex; /* Enables flexbox layout */
+      flex-direction: column; /* Sets the main axis to vertical */
+    }
+    nav {
+      background-color: #8EC5FC; /* Background color */
+      background-image: linear-gradient(to right,#d6acfe, #d6acfe, #abd4fe);
+    }
+    footer {
+      background-color: #8EC5FC; /* Background color */
+      background-image: linear-gradient(to right,#d6acfe, #d6acfe, #abd4fe); 
+      margin-top: auto;
+    }
+    .container {
+      max-width: 600px;
+      margin: auto;
+      padding: 2rem;
+      background-color: rgba(255, 255, 255, 0.8); /* Adjusted background color with opacity */
+      border-radius: 0.5rem; /* Added border radius for the login box */
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Added box shadow for a raised effect */
+    }
+    .form-input {
+      border: 2px solid #966be4; /* Updated border color to match the gradient */
+      border-radius: 0.375rem;
+      background-color: rgb(233, 230, 230); /* Updated background color to match the gradient */
+      color: #111317;
+      padding: 0.75rem;
+    }
+    footer {
+      margin-top: auto;
+    }
+  </style>
+</head>
+<body>
+  <nav class="py-6 px-8 flex items-center justify-between bg-violet-500">
+    <h1 class="text-4xl font-bold text-black">Projectflow</h1>
+  </nav>
+
+  <main class="py-12 px-6 flex-grow"> 
+    <div class="container bg-violet-300 rounded-lg shadow-lg max-w-md mx-auto">
+      <h1 class="text-4xl text-center text-slate-800 mb-8">Sign Up</h1>
+      <form class="space-y-4">
+        <div>
+          <label class="block text-slate-800 mb-2" for="email" font="bold">E-mail</label>
+          <input type="email" id="email" class="form-input w-full">
+        </div>
+        <div>
+          <label class="block text-slate-800 mb-2" for="password" font="bold">Password</label>
+          <input type="password" id="password" class="form-input w-full">
+        </div>
+        <div>
+          <label class="block text-slate-800 mb-2" for="repeat-password" > Repeat Password</label>
+          <input type="password" id="repeat-password" class="form-input w-full">
+        </div>
+        <button type="submit" class="bg-violet-800 text-white py-3 px-4 rounded-lg w-full hover:bg-violet-700 transition duration-300">Sign Up</button>
+      </form>
+    </div>
+  </main>
+  <footer class="py-6 px-8 bg-violet-700 text-center text-black">
+    <p class="text-sm">© 2024 Projectflow. All rights reserved.</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,57 @@
+{% extends 'projectflow/base.html' %}
+{% block content %}
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+  
+ 
+    nav a {
+      color: white;
+      margin: 0 0.25rem;
+      transition: text-decoration 0.3s;
+    }
+    nav a:hover {
+     
+      color: black;
+    }
+    main {
+      flex: 1;
+      padding: 2rem;
+    }
+    footer {
+      background: linear-gradient(to right, #d6acfe, #d3a5fe, #b9dcff);
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: auto;
+    }
+    .main-content {
+     
+      padding: 2rem;
+      border-radius: 0.5rem;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+  </style>
+</head>
+<body>
+  
+  <main class="py-6 px-8 ">
+    <div class="main-content mt-6 space-y-6">
+      <h1 class="text-4xl font-bold">About</h1>
+      <div>
+        <h2 class="font-bold">Our Mission:</h2>
+        <p>Our mission is to provide a user-friendly and efficient project management solution that empowers teams to collaborate effectively and achieve their project goals.</p>
+      </div>
+      <div>
+        <h2 class="font-bold">Our Team:</h2>
+        <p>learning...</p>
+      </div>
+     
+ </body>
+ </html>
+{% endblock %}

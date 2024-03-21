@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About - ProjectFlow</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #8EC5FC; /* Background color */
+      background-image: linear-gradient(to right, #d6acfe, #d6acfe, #abd4fe); /* Gradient */
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh; /* Ensure the body extends to at least the height of the viewport */
+    }
+    nav {
+      background: linear-gradient(to right, #d6acfe, #cf9cfe, #b9d9f9);
+      color: white;
+      padding: 1rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    nav a {
+      color: white;
+      margin: 0 0.25rem;
+      transition: text-decoration 0.3s;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    main {
+      flex: 1;
+      padding: 2rem;
+    }
+    footer {
+      background: linear-gradient(to right, #d6acfe, #d3a5fe, #b9dcff);
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: auto;
+    }
+    .main-content {
+      /* Removed background-color property */
+      padding: 2rem;
+      border-radius: 0.5rem;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+  </style>
+</head>
+<body>
+  <nav class="py-6 px-8 flex items-center justify-between bg-gradient-to-r from-purple-300 to-blue-400">
+    <h1 class="text-3xl font-bold text-black">Projectflow</h1>
+    <div>
+      <a href="firstpage.html" class="py-2 px-4 bg-blue-200 text-black bg-blue-500:hover">Home</a>
+      </div>
+  </nav>
+  <main class="py-6 px-8 ">
+    <div class="main-content mt-6 space-y-6">
+      <h1 class="text-4xl font-bold">About</h1>
+      <div>
+        <h2 class="font-bold">Our Mission:</h2>
+        <p>Our mission is to provide a user-friendly and efficient project management solution that empowers teams to collaborate effectively and achieve their project goals.</p>
+      </div>
+      <div>
+        <h2 class="font-bold">Our Team:</h2>
+        <p>We are a dedicated team of professionals with expertise in project management, software development, and user experience design. We are passionate about delivering high-quality solutions that meet the needs of our clients.</p>
+      </div>
+      <div>
+        <h2 class="font-bold">Contact Us:</h2>
+        <p>If you have any questions or feedback, please don't hesitate to contact us at <a href="mailto:yeshw537@gmail.com">yesh@gmail.com</a>.</p>
+      </div>
+    </div>
+
+      
+  </main>
+  <footer class="py-6 px-8 bg-gradient-to-r from-purple-300 to-blue-400 text-center text-white">
+    <p class="text-sm text-black">&copy; 2024 ProjectFlow. All rights reserved.</p>
+  </footer>
+</body>
+</html>

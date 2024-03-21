@@ -1,0 +1,21 @@
+{% extends 'projectflow/afterlogin.html' %}
+{% block content %}
+
+<div class="flex justify-between items-center mb-8">
+  <h1 class="text-4xl font-semibold text-gray-800">Projects</h1>
+  <a href="{% url 'project:add' %}" class="py-2 px-4 bg-blue-500 text-white rounded-lg shadow-md hover:bg-violet-700 transition duration-300">Add Project</a>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+  {% for project in projects %}
+  <div class="py-6 px-6 bg-white rounded-lg shadow-md">
+    <h2 class="mb-6 text-2xl">{{ project.name }}</h2>
+    <p class="text-sm text-slate-600">{{ project.description }}</p>
+    <div class="flex justify-end mt-4">
+      <a href="{% url 'project:details' project.pk %}" class="text-blue-600 hover:text-blue-700">View Details</a>
+
+    </div>
+  </div>
+  {% endfor %}
+</div>
+
+{% endblock %}
